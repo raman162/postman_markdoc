@@ -1,0 +1,13 @@
+#! /usr/bin/env ruby
+
+require 'postman_markdoc'
+stdin = STDIN.tty? ? nil : STDIN.read
+files = ARGV
+if stdin.nil? && files == []
+  puts "USAGE: specify files of collections"
+  puts "postman_markdown collection1.json collection2.json"
+elsif stdin.nil?
+  puts PostmanMarkdoc.files_to_markdown(*files)
+else
+  puts PostmanMarkdoc.raw_json_to_markdown(stdin)
+end
