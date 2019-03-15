@@ -36,10 +36,10 @@ markdown = PostmanMarkdoc.raw_json_to_markdown(raw_json)
 
 
 ## TODO
-[x] have something working
-[x] Support multiple JSON files
-[ ] support nested folders
-[ ] Support multiple versions
-[ ] test cases
-[ ] docker
-[ ] versioning
+* [x] have something working
+* [x] Support multiple JSON files
+* [ ] support nested folders
+* [ ] Support multiple versions
+* [ ] test cases
+* [ ] docker
+* [ ] versioning
