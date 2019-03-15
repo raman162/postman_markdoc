@@ -29,8 +29,8 @@ class PostmanMarkdoc
     @markdown = ""
     collections.each do |collection|
       @markdown << PostmanMarkdoc::MarkdownGenerator.generate(
-                    data: collection
-                   ).content
+                     data: collection
+                    ).content
     end
   end
 

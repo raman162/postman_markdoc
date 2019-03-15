@@ -26,16 +26,16 @@ class PostmanMarkdoc::MarkdownGenerator
         @content << "#{request.description}\n\n"
       end
       if request.headers != []
-        @content << "#### Headers\n```\n"
+        @content << "#### Headers\n\n```\n"
         request.headers.each do |header|
           @content << header['key']
           @content << "\t\t\t\t\t"
           @content << header['value']
           @content << "\n"
         end
-        @content << "```\n"
+        @content << "```\n\n"
       end
-      @content << "#### Body\n```\n#{request.body}\n```\n"
+      @content << "#### Body\n\n```\n#{request.body}\n```\n\n"
     end
   end
 

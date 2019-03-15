@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'postman_markdoc'
-  s.version     = '0.0.0'
+  s.version     = '0.0.2'
   s.date        = '2019-03-15'
   s.summary     = 'Convert Postman Collections to Markdown'
   s.authors     = ['Raman Walwyn-Venugopal']

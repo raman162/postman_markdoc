@@ -1,7 +1,11 @@
-# Postman Documentation Markdown Converter
+# Postman Markdown Documentation Generator
 
 The goal of this project is to convert the existing postman `v2.1` collections
-into presentable markdown. The gem can be used in your shell and in your
+into presentable markdown. The gem can be used in your shell and in your ruby
+code.
+
+The reason markdown was chosen was because it was human readable and there are
+a plethora of markdown viewers and markdown tools in existence.
 
 ## Installation
 ```
@@ -14,6 +18,8 @@ in 2.1 format.
 
 ### Shell usage
 
+
+Generating markdown files
 ```
 cat collection.json | postman_markdoc > collection.md
 ```
